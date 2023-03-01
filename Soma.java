@@ -1,17 +1,26 @@
-import java.util.Scanner;
-
-	public class Main {
+	import java.util.Locale;
+	import java.util.Scanner;
+	
+	public class Soma {
 
 	public static void main(String[] args) {
 		
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner (System.in);
-		int A, B , Soma;
-		A = sc.nextInt();
-		B = sc.nextInt ();
-		Soma = A + B;
-		System.out.println("Soma =" + Soma);
-		sc.close();
 		
+		int x,y, soma;
+		
+		System.out.print("Digite o valor de X: ");
+		x = sc.nextInt();
+		
+		System.out.print("Digite o valor de Y: ");
+		y = sc.nextInt();
+		
+		soma = x + y;
+		
+		System.out.printf("SOMA = %d", soma);
+		
+		sc.close();
 	}
 
 }
